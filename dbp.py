@@ -174,7 +174,7 @@ async def мут(ctx, member: discord.Member):
 	'''Выдача человеку мута'''
 	await ctx.channel.purge(limit= 1)
 	
-	mute_role = discord.utils.get(ctx.message.guild.roles, name= 'mute')
+	mute_role = discord.utils.get(ctx.message.guild.roles, name= 'Мут')
 	
 	await member.add_roles(mute_role)
 	
